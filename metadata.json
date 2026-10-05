@@ -1,0 +1,6 @@
+{
+  "name": "AURA STUDIO — Alta Cabeleireira & Atelier de Beleza",
+  "description": "Atelier contemporâneo de beleza, coloração e alta costura capilar. Experiência personalizada em ambiente sofisticado e arquitetônico.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
