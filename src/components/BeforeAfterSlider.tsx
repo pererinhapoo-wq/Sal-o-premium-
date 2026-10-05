@@ -1,5 +1,6 @@
 import { useState, useRef, useCallback } from 'react';
 import { ArrowLeftRight, Sparkles, CheckCircle2, Info } from 'lucide-react';
+import transformationImg from '../assets/images/hair_transformation_editorial_1791177562306.jpg';
 
 interface BeforeAfterSliderProps {
   onOpenBooking: () => void;
@@ -68,9 +69,15 @@ export function BeforeAfterSlider({ onOpenBooking }: BeforeAfterSliderProps) {
             >
               {/* "After" Image (Background, full size) */}
               <img
-                src="/src/assets/images/hair_transformation_editorial_1791177562306.jpg"
+                src={transformationImg}
                 alt="Transformação Depois - French Bob estilizado"
                 referrerPolicy="no-referrer"
+                onError={(e) => {
+                  const target = e.currentTarget;
+                  if (target.src !== '/images/hair_transformation_editorial.jpg') {
+                    target.src = '/images/hair_transformation_editorial.jpg';
+                  }
+                }}
                 className="absolute inset-0 w-full h-full object-cover pointer-events-none"
               />
               <div className="absolute top-4 right-4 bg-[#0b0b0a]/80 backdrop-blur-md px-3 py-1.5 border border-white/10 text-[11px] uppercase tracking-widest text-[#f5f2eb]">
@@ -83,9 +90,15 @@ export function BeforeAfterSlider({ onOpenBooking }: BeforeAfterSliderProps) {
                 style={{ width: `${sliderPosition}%` }}
               >
                 <img
-                  src="/src/assets/images/hair_transformation_editorial_1791177562306.jpg"
+                  src={transformationImg}
                   alt="Transformação Antes"
                   referrerPolicy="no-referrer"
+                  onError={(e) => {
+                    const target = e.currentTarget;
+                    if (target.src !== '/images/hair_transformation_editorial.jpg') {
+                      target.src = '/images/hair_transformation_editorial.jpg';
+                    }
+                  }}
                   className="absolute inset-y-0 left-0 h-full max-w-none object-cover filter contrast-75 brightness-75 sepia-[0.3]"
                   style={{
                     width: containerRef.current ? `${containerRef.current.clientWidth}px` : '100%',

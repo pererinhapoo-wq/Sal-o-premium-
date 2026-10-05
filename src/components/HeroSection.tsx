@@ -1,4 +1,5 @@
 import { ArrowDown, Calendar, Sparkles, Compass } from 'lucide-react';
+import heroEditorialImg from '../assets/images/hero_editorial_salon_1791177517311.jpg';
 
 interface HeroSectionProps {
   onOpenBooking: () => void;
@@ -91,9 +92,16 @@ export function HeroSection({ onOpenBooking }: HeroSectionProps) {
           <div className="lg:col-span-5 relative">
             <div className="relative aspect-[4/5] sm:aspect-[3/4] overflow-hidden bg-[#171615] border border-white/10 shadow-2xl group">
               <img
-                src="/src/assets/images/hero_editorial_salon_1791177517311.jpg"
+                src={heroEditorialImg}
                 alt="Editorial AURA STUDIO - Cabelo com textura acetinada e corte moderno"
                 referrerPolicy="no-referrer"
+                loading="eager"
+                onError={(e) => {
+                  const target = e.currentTarget;
+                  if (target.src !== '/images/hero_editorial_salon.jpg') {
+                    target.src = '/images/hero_editorial_salon.jpg';
+                  }
+                }}
                 className="w-full h-full object-cover object-center filter grayscale-[15%] group-hover:scale-105 group-hover:grayscale-0 transition-transform duration-700 ease-out"
               />
 

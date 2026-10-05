@@ -60,6 +60,8 @@ export function EditorialGallery() {
               src={GALLERY_ITEMS[0].image}
               alt={GALLERY_ITEMS[0].title}
               referrerPolicy="no-referrer"
+              loading="lazy"
+              decoding="async"
               className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent opacity-80 group-hover:opacity-95 transition-opacity" />
@@ -96,6 +98,8 @@ export function EditorialGallery() {
                 src={GALLERY_ITEMS[1].image}
                 alt={GALLERY_ITEMS[1].title}
                 referrerPolicy="no-referrer"
+                loading="lazy"
+                decoding="async"
                 className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent opacity-75 group-hover:opacity-90 transition-opacity" />
@@ -125,6 +129,8 @@ export function EditorialGallery() {
                 src={GALLERY_ITEMS[2].image}
                 alt={GALLERY_ITEMS[2].title}
                 referrerPolicy="no-referrer"
+                loading="lazy"
+                decoding="async"
                 className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent opacity-75 group-hover:opacity-90 transition-opacity" />
@@ -156,6 +162,8 @@ export function EditorialGallery() {
               src={GALLERY_ITEMS[3].image}
               alt={GALLERY_ITEMS[3].title}
               referrerPolicy="no-referrer"
+              loading="lazy"
+              decoding="async"
               className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent" />
@@ -208,6 +216,7 @@ export function EditorialGallery() {
                 src={activeItem.image}
                 alt={activeItem.title}
                 referrerPolicy="no-referrer"
+                loading="eager"
                 className="w-full h-full max-h-[75vh] object-contain"
               />
             </div>

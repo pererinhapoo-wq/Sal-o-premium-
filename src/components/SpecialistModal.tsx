@@ -48,6 +48,7 @@ export function SpecialistModal({ specialist, onClose, onBookWithSpecialist }: S
             src={specialist.portrait}
             alt={specialist.name}
             referrerPolicy="no-referrer"
+            loading="eager"
             className="w-full h-full object-cover object-center"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent md:hidden" />

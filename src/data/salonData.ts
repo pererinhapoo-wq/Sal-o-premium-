@@ -1,3 +1,9 @@
+import specialistMasterImg from '../assets/images/specialist_master_stylist_1791177552940.jpg';
+import galleryBalayageImg from '../assets/images/gallery_hair_balayage_1791177532910.jpg';
+import salonInteriorImg from '../assets/images/gallery_salon_interior_1791177542993.jpg';
+import transformationImg from '../assets/images/hair_transformation_editorial_1791177562306.jpg';
+import heroEditorialImg from '../assets/images/hero_editorial_salon_1791177517311.jpg';
+
 export interface ServiceItem {
   id: string;
   name: string;
@@ -138,7 +144,7 @@ export const SPECIALISTS_DATA: Specialist[] = [
     experience: '14 anos de formação entre Paris e São Paulo',
     bio: 'Pioneira em cortes que respeitam o movimento natural e textura sem dependência diária de secador. Assina editoriais de moda e visagismo corporativo.',
     signatureStyle: 'Bobs franceses texturizados e camadas invisíveis com balanço orgânico.',
-    portrait: '/src/assets/images/specialist_master_stylist_1791177552940.jpg',
+    portrait: specialistMasterImg,
     availableDays: 'Terça a Sábado',
     clientCount: 'Mais de 3.200 transformações realizadas'
   },
@@ -150,7 +156,7 @@ export const SPECIALISTS_DATA: Specialist[] = [
     experience: '11 anos dedicados à colorimetria pura',
     bio: 'Especialista em nuances de caramelo, avelã e loiro baunilha. Desenvolveu a técnica de transição difusa com mínimo desgaste das cutículas.',
     signatureStyle: 'Dimensão e profundidade com brilho tridimensional.',
-    portrait: '/src/assets/images/gallery_hair_balayage_1791177532910.jpg',
+    portrait: galleryBalayageImg,
     availableDays: 'Quarta a Sábado',
     clientCount: 'Referência em tonalização limpa e saudável'
   },
@@ -162,7 +168,7 @@ export const SPECIALISTS_DATA: Specialist[] = [
     experience: '9 anos em tricologia integrada e saúde capilar',
     bio: 'Combina óleos essenciais orgânicos, cromoterapia e laser frio para desobstruir folículos, devolver densidade e proporcionar relaxamento absoluto.',
     signatureStyle: 'Rituais sensoriais que restauram vigor e acalmam o estresse.',
-    portrait: '/src/assets/images/gallery_salon_interior_1791177542993.jpg',
+    portrait: salonInteriorImg,
     availableDays: 'Terça a Sexta',
     clientCount: 'Mais de 1.800 rituais de restauração'
   },
@@ -174,7 +180,7 @@ export const SPECIALISTS_DATA: Specialist[] = [
     experience: '8 anos com editoriais de noivas e passarela',
     bio: 'Defensora da maquiagem que respira: correção invisível, pontos de luz harmônicos e destaque aos traços singulares de cada rosto.',
     signatureStyle: 'Glow natural com durabilidade impecável para eventos longos.',
-    portrait: '/src/assets/images/hair_transformation_editorial_1791177562306.jpg',
+    portrait: transformationImg,
     availableDays: 'Quinta a Sábado',
     clientCount: 'Especialista nas principais semanas de moda'
   }
@@ -188,7 +194,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     specialist: 'Gabriel Martins',
     format: 'vertical',
     aspectClass: 'md:col-span-5 md:row-span-2 aspect-[3/4]',
-    image: '/src/assets/images/gallery_hair_balayage_1791177532910.jpg',
+    image: galleryBalayageImg,
     caption: 'Luminosidade quente e contorno facial suave com preservação de integridade capilar.',
     duration: '3h30'
   },
@@ -199,7 +205,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     specialist: 'Espaço AURA',
     format: 'wide',
     aspectClass: 'md:col-span-7 md:row-span-1 aspect-[16/9]',
-    image: '/src/assets/images/gallery_salon_interior_1791177542993.jpg',
+    image: salonInteriorImg,
     caption: 'Bancadas em mármore travertino e iluminação neutra com fidelidade cromática real.',
     duration: 'Experiência'
   },
@@ -210,7 +216,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     specialist: 'Helena Vasconcelos',
     format: 'square',
     aspectClass: 'md:col-span-7 md:row-span-1 aspect-[4/3]',
-    image: '/src/assets/images/hair_transformation_editorial_1791177562306.jpg',
+    image: transformationImg,
     caption: 'Precisão milimétrica na nuca e movimento fluido na linha da mandíbula.',
     duration: '1h15'
   },
@@ -221,7 +227,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     specialist: 'Helena & Equipe',
     format: 'wide',
     aspectClass: 'md:col-span-12 md:row-span-1 aspect-[21/9]',
-    image: '/src/assets/images/hero_editorial_salon_1791177517311.jpg',
+    image: heroEditorialImg,
     caption: 'Fios alinhados com balanço natural e textura acetinada sem aspecto pesado.',
     duration: 'Ritual Completo'
   }

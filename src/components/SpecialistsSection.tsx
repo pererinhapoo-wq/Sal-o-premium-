@@ -43,6 +43,8 @@ export function SpecialistsSection({ onOpenBooking }: SpecialistsSectionProps) {
                     src={specialist.portrait}
                     alt={specialist.name}
                     referrerPolicy="no-referrer"
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-cover object-center filter grayscale-[25%] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500 ease-out"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-80" />
